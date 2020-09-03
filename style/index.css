@@ -1,1 +1,363 @@
 /* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  /* border: 0; */
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/***************************************************
+****************************************************
+***********************BEGIN************************
+****************************************************
+****************************************************/
+* {
+  /* border: 1px solid lightgray; */
+}
+
+/**** NAV ****/
+
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8vh;
+  margin: 10px 4% 0 4%;
+}
+
+.topnav a {
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+  width: 40%;
+}
+
+.menu a {
+  display: inline-block;
+}
+
+.button {
+  display: inline-block;
+  width: 12%;
+  height: 8%;
+  /* background-color: lightgray; */
+  color: rgba(109, 71, 40, 0.712);
+  text-align: center;
+  border: 2px solid rgba(109, 71, 40, 0.712);
+  padding: 10px 20px;
+}
+
+.button:hover {
+  background-color: white;
+  color: rgba(109, 71, 40, 0.712);
+  border: 2px solid white;
+  transition: .2s;
+}
+
+/**** END NAV ****/
+/**** HERO ****/
+h1 {
+  font-size: 42px;
+  color: rgb(31, 24, 95);
+}
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.logo a {
+  font-size: 30px;
+  color: rgba(109, 71, 40, 0.712);
+}
+
+/*
+rgb(31, 24, 95)
+rgba(109, 71, 40, 0.712)
+*/
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+  width: 80%;
+  background-image: url(https://i.picsum.photos/id/214/2729/2047.jpg?hmac=sbADnAldkjZ_C8bOEoXFBSHedcFRZYO_GPg3eHwQ5m0);
+  /* border: 2px solid darkcyan; */
+}
+
+.cta-button {
+  display: inline-block;
+  /* width: 12%;
+  height: 4%; */
+  /* background-color: lightgray; */
+  color: rgb(31, 24, 95);
+  text-align: center;
+  border: 2px solid rgb(31, 24, 95);
+  margin-top: 10px;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.cta-button:hover {
+  background-color: black;
+  color: lightgray;
+  transition: .2s;
+}
+
+/******************************
+*************GALLERY***********
+******************************/
+section.gallery {
+  margin-top: 50px;
+  padding-top: 30px;
+  margin-bottom: 20px;
+  /* border-top: 1px solid lightgray; */
+}
+
+h3 {
+  font-size: 16px;
+  text-transform: uppercase;
+  margin: 15px;
+  font-weight: 100px;
+  color: rgba(29, 43, 61, 0.582);
+}
+
+.gallery {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.galdiv {
+  width: 30%;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.gal {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.one {
+  background-image: url(https://i.picsum.photos/id/193/3578/2451.jpg?hmac=M5yoazhwdwMa_27rC5-S50SNFvCy4Kni0wXoa6iVF0g);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.two {
+  background-image: url(https://i.picsum.photos/id/210/1920/1280.jpg?hmac=kYfMv3EcqaAlduPKLApAyc1m7wGQcFxRZQbK45CGcKI);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.three {
+  background-image: url(https://i.picsum.photos/id/213/4928/3264.jpg?hmac=OC0yPL-iiM1YgVjpAjbMf51MjnR6cycgmn1TSLJhDZ0);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.four {
+  background-image: url(https://i.picsum.photos/id/218/4752/3168.jpg?hmac=Orn41GOM38rjA-HLzG_hpWi1sfLgnsAAvpiB-uwjvf0);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.five {
+  background-image: url(https://i.picsum.photos/id/237/3500/2095.jpg?hmac=y2n_cflHFKpQwLOL1SSCtVDqL8NmOnBzEW7LYKZ-z_o);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.six {
+  background-image: url(https://i.picsum.photos/id/244/4288/2848.jpg?hmac=R6j9PBP4aBk2vcEIoOPU4R_nuknizryn2Vq8GGtWTrM);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*******************************
+************** FOOTER **********
+*******************************/
+.footer {
+  height: 25vh;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgba(235, 236, 238, 0.582);
+  background-color: rgba(240, 234, 229, 0.459);
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-button {
+  display: inline-block;
+  /* width: 12%;
+  height: 4%; */
+  /* background-color: lightgray; */
+  color: rgb(31, 24, 95);
+  text-align: center;
+  border: 2px solid rgb(31, 24, 95);
+  margin-top: 10px;
+  padding: 15px 60px;
+  text-decoration: none;
+}
+
+.footer-button:hover {
+  background-color: rgb(31, 24, 95);
+  color: whitesmoke;
+  border: 2px solid white;
+  transition: .2s;
+}
