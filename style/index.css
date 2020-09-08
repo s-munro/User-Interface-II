@@ -157,6 +157,7 @@ table {
   text-decoration: none;
 }
 
+
 .menu {
   display: flex;
   justify-content: flex-end;
@@ -175,7 +176,8 @@ table {
   color: rgba(109, 71, 40, 0.712);
   text-align: center;
   border: 2px solid rgba(109, 71, 40, 0.712);
-  padding: 10px 20px;
+  padding: 10px 20px 10px 20px;
+  justify-content: center;
 }
 
 .button:hover {
@@ -351,7 +353,7 @@ h3 {
   text-align: center;
   border: 2px solid rgb(31, 24, 95);
   margin-top: 10px;
-  padding: 15px 60px;
+  padding: 15px 100%;
   text-decoration: none;
 }
 
@@ -361,3 +363,49 @@ h3 {
   border: 2px solid white;
   transition: .2s;
 }
+
+
+/* End of footer section styles */
+/* max width is for desktop-first design - it scales down // min width is for mobile-first design - it scales up */
+/* styles for table at 800px*/
+@media (max-width: 800px) {
+  .galdiv {
+    width: 45%;
+  }
+
+  header {
+    margin-bottom: 200px;
+  }
+
+  .menu a {
+    display: flex;
+    justify-content: center;
+  }
+
+  section.footer {
+    margin-top: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  /* .galdiv {
+    width: 60%;
+  } */
+  .menu a {
+    display: flex;
+    justify-content: center;
+  }
+
+  .topnav {
+    margin: 10px 5% 0 5%;
+  }
+
+  .hero-container {
+    margin-top: 25px;
+
+  }
+
+}
+
+/* styles for phone at 500px */
